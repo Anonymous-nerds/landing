@@ -1,37 +1,42 @@
-import axios from "axios";
-
-axios
-  .get("https://blog-3-n5tb.onrender.com/articleList")
-  .then((result) => {
-    const fetchBlogs = result.data.map((blog) => {
+fetch("https://blog-3-n5tb.onrender.com/articleList")
+  .then(function (response) {
+    // Convert the response to JSON
+    return response.json();
+  })
+  .then(function (result) {
+    // Map over the response data
+    var fetchBlogs = result.map(function (blog) {
       // Convert createdAt string to a Date object
-      const createdAtDate = new Date(blog.createdAt);
+      var createdAtDate = new Date(blog.createdAt);
 
       // Options for formatting the date
-      const options = {
-        weekday: "long", // Full name of the day of the week
-        day: "2-digit", // Two-digit day of the month
-        month: "long", // Full name of the month
-        year: "numeric", // Full year
+      var options = {
+        weekday: "long",
+        day: "2-digit",
+        month: "long",
+        year: "numeric",
       };
 
       // Format the date using Intl.DateTimeFormat
-      const formattedDate = new Intl.DateTimeFormat("en-US", options).format(
+      var formattedDate = new Intl.DateTimeFormat("en-US", options).format(
         createdAtDate
       );
 
       // Return the blog object with formatted createdAt
-      return {
-        ...blog,
-        createdAt: formattedDate,
-      };
+      return Object.assign({}, blog, { createdAt: formattedDate });
     });
-    // Reverse the order of blogs after formatting
-    const getBlogs = fetchBlogs
-      .filter((blog) => blog.userID === "665cdfb361a15916c78c09cf")
+
+    // Filter and reverse the blogs
+    var getBlogs = fetchBlogs
+      .filter(function (blog) {
+        return blog.userID === "665cdfb361a15916c78c09cf";
+      })
       .reverse();
 
-    // Set the state with formatted and reversed blogs
+    // Output the formatted and reversed blogs
     console.log(getBlogs);
   })
-  .catch((err) => console.log(err));
+  .catch(function (err) {
+    // Handle errors
+    console.log(err);
+  });
