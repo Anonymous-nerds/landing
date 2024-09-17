@@ -17,6 +17,7 @@ fetch("https://blog-3-n5tb.onrender.com/articleList")
     // Output the formatted and reversed blogs
     console.log(`Blog Data : ${getBlogs}`);
   })
+  // comment here
   .catch(function (err) {
     // Handle errors
     console.log(err);
