@@ -671,26 +671,28 @@ Banner Style
   background-position: right bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 170px 0px 120px 0px;
+  padding: 170px 0px 70px 0px;
+  margin-bottom: 15%;
+  
 }
 
 .main-banner .item-1 {
-  background-image: url(../images/banner-item-01.jpg);
+  background-image: linear-gradient(rgba(0,0,0,0.70),rgba(0,0,0,0.70)), url(../images/anonym.png);
+  
 }
 
 .main-banner .item-2 {
-  background-image: url(../images/banner-item-02.jpg);
+  background-image: linear-gradient(rgba(0,0,0,0.70),rgba(0,0,0,0.70)), url(../images/anonym2.png);
+  height:105vh;
+  
 }
 
-.main-banner .item-3 {
-  background-image: url(../images/banner-item-03.jpg);
-}
 
 .main-banner .item {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  border-radius: 25px;
+  border-radius: 100px;
   padding: 100px 100px;
   margin-left: 130px;
 }
@@ -707,12 +709,13 @@ Banner Style
 }
 
 .main-banner .item h2 {
-  font-size: 48px;
+  font-size: 43px;
   font-weight: 700;
   color: #fff;
   line-height: 70px;
   width: 60%;
   margin-bottom: 40px;
+  text-transform: capitalize;
 }
 
 .main-banner .item p {
@@ -780,6 +783,7 @@ Banner Style
   border-radius: 50%;
   opacity: 1;
   transition: all .3s;
+  margin-bottom: 100px;
 }
 
 .main-banner .owl-nav .owl-prev i {
@@ -823,7 +827,7 @@ Services Style
 }
 
 .services .service-item .icon img {
-  max-width: 86px;
+  max-width: 155px;
   transition: all .2s;
 }
 
