@@ -1,5 +1,6 @@
 // import React from 'react'
 import Nav from "../../../../components/Nav";
+import Count from "../Count/Count";
 import "./Hero.scss";
 
 const Hero = () => {
@@ -19,6 +20,9 @@ const Hero = () => {
             <button className="p-5 text-lg bg-black text-white px-10 rounded-sm">
               Join the Community
             </button>
+          </div>
+          <div className="mt-10">
+            <Count />
           </div>
         </div>
       </div>

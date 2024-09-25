@@ -1,0 +1,13 @@
+.Count {
+  .box {
+    @apply p-5 rounded-full bg-[#fffaeb];
+
+    .num {
+      @apply text-4xl font-bold;
+    }
+
+    .text {
+      @apply text-lg mt-4;
+    }
+  }
+}
