@@ -58,7 +58,7 @@ export default function Nav() {
             {/* #2bfccf */}
             <a
               href="/register"
-              className="p-3 px-6 text-md bg-white text-black rounded-full  m-2 icon flex gap-3"
+              className="p-3 px-6 text-md bg-white text- rounded-full  m-2 icon flex gap-3"
               style={{ letterSpacing: "1px" }}
             >
               <span className="text-black">Start now</span>
@@ -107,7 +107,7 @@ export default function Nav() {
                 <div className="py-6 flex lg:flex-1 lg:justify-end">
                   <a
                     href="/register"
-                    className="p-3 px-6 text-md bg-white text-black rounded-full  m-2 icon flex gap-3"
+                    className="p-3 px-6 text-md bg-white text- rounded-full  m-2 icon flex gap-3"
                     style={{ letterSpacing: "1px" }}
                   >
                     <span className="text-black">Start now</span>

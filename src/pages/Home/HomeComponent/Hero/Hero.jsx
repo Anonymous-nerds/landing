@@ -17,7 +17,7 @@ const Hero = () => {
             better, and we know it will be unforgettable. Are you ready?
           </p>
           <div className="mt-10">
-            <button className="p-5 text-lg bg-black text-white px-10 rounded-sm">
+            <button className="p-5 text-lg bg-black text-white px-10 rounded-full">
               Join the Community
             </button>
           </div>
