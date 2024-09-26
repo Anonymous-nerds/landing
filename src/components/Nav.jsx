@@ -6,6 +6,7 @@ import Logo from "../assets/react.svg";
 import { GoLinkExternal } from "react-icons/go";
 
 // import "./shared.scss";
+// import "./shared.scss";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -21,7 +22,7 @@ export default function Nav() {
 
   return (
     <div className="bg-transparent Nav">
-      <header className="inset-x-0 top-0 z-50 ">
+      <header className="inset-x-0 top-0 z-50 fixed">
         <nav
           className="flex items-center justify-between p-5 lg:px-8 bg-transparent bg-opacity-20 backdrop-blur-lg"
           aria-label="Global"
@@ -48,7 +49,7 @@ export default function Nav() {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-sm font-semibold leading-6 text-black link"
+                className="text-sm font-semibold leading-6 text-white link"
               >
                 {item.name}
               </a>
@@ -58,7 +59,7 @@ export default function Nav() {
             {/* #2bfccf */}
             <a
               href="/register"
-              className="p-3 px-6 text-md bg-white text- rounded-full  m-2 icon flex gap-3"
+              className="p-3 px-6 text-md bg-white text-black rounded-full  m-2 icon flex gap-3"
               style={{ letterSpacing: "1px" }}
             >
               <span className="text-black">Start now</span>
@@ -107,7 +108,7 @@ export default function Nav() {
                 <div className="py-6 flex lg:flex-1 lg:justify-end">
                   <a
                     href="/register"
-                    className="p-3 px-6 text-md bg-white text- rounded-full  m-2 icon flex gap-3"
+                    className="p-3 px-6 text-md bg-white text-black rounded-full  m-2 icon flex gap-3"
                     style={{ letterSpacing: "1px" }}
                   >
                     <span className="text-black">Start now</span>
