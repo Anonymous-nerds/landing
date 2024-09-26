@@ -3,12 +3,13 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import Nav from "../../../../components/Nav";
 import "./Hero.scss";
+import Image from "../../../../assets/Screenshot-1.png";
 
 const Hero = () => {
   return (
     <div className="Hero">
       <Nav />
-      <div className="p-20 my-24 lg:py-16 flex justify-center text-center">
+      <div className="p-20 my-24 lg:py-16">
         <div className="">
           <div className="">
             <h1
@@ -39,6 +40,9 @@ const Hero = () => {
                 </span>
               </button>
             </div>
+          </div>
+          <div className="mt-16">
+            <img className="rounded-lg w-full" src={Image} alt="" />
           </div>
         </div>
       </div>
